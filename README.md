@@ -8,7 +8,7 @@
 
 # Configure
 
-1.In the terminal please run the following commands
+1. In the terminal please run the following commands
 
 `git clone https://github.com/UdyW/carbon-offset-api.git`
 
