@@ -10,34 +10,34 @@
 
 1.In the terminal please run the following commands
 
-    `git clone https://github.com/UdyW/carbon-offset-api.git`
+`git clone https://github.com/UdyW/carbon-offset-api.git`
 
-    `cd carbon-offset-api`
+`cd carbon-offset-api`
 
-    ` composer install`
+` composer install`
 
-    `mv .env.example .env`
+`mv .env.example .env`
  
  2.Change following in the .env file
  
-    APP_KEY=base64:xnHdP8VbRyfX33KxjtPB1oZbwvT/WYAENdjet7quG28=
+APP_KEY=base64:xnHdP8VbRyfX33KxjtPB1oZbwvT/WYAENdjet7quG28=
  
-    DB_CONNECTION=sqlite
+DB_CONNECTION=sqlite
  
-    remove all other DB_* values
+remove all other DB_* values
  
 3.In the terminal 
 
-    `php artisan passport:client`
+`php artisan passport:client`
 
-    This will prompt to enter Client id which can be ignored (press return), then client name which should be entered and redirect url also can be ignored.
-    Then it will create a Client ID and a Client Secret which should be taken a note of.
-    Example;
+This will prompt to enter Client id which can be ignored (press return), then client name which should be entered and redirect url also can be ignored.
+Then it will create a Client ID and a Client Secret which should be taken a note of.
+Example;
 
-    ```
-    Client ID: 2
-    Client secret: aGCZWXswHCVXJgbW4MmIX69GxCHMdOuDvUMxjYLI
-    ```
+```
+Client ID: 2
+Client secret: aGCZWXswHCVXJgbW4MmIX69GxCHMdOuDvUMxjYLI
+```
 
 4.Then run following in the Terminal
 
