@@ -1,14 +1,14 @@
-#Summery
+# Summery
 
-The main endpoint is `api/carbon-offset-schedule` which handles the requests for schedule.
-Lumen Framework has being used for the development and package Passport (`dusterio/lumen-passport`) is used to handle authentication of requests.
-The test cases are defined in `tests/CarbonOffsetScheduleTest.php`
-Test class has a $testCases array to define cases for ease and all of them will automatically be executed while running test `vendor/phpunit/phpunit/phpunit`
+* The main endpoint is `api/carbon-offset-schedule` which handles the requests for schedule.
+* Lumen Framework has being used for the development and package Passport (`dusterio/lumen-passport`) is used to handle authentication of requests.
+* The test cases are defined in `tests/CarbonOffsetScheduleTest.php`
+* Test class has a **$testCases** array to define cases for ease and all of them will automatically be executed while running test `vendor/phpunit/phpunit/phpunit`
 
 
 # Configure
 
-In the treminal please run the following commands
+1.In the terminal please run the following commands
 
 `git clone https://github.com/UdyW/carbon-offset-api.git`
 
@@ -18,7 +18,7 @@ In the treminal please run the following commands
 
 `mv .env.example .env`
  
- Change following in the .env file
+ 2.Change following in the .env file
  
  APP_KEY=base64:xnHdP8VbRyfX33KxjtPB1oZbwvT/WYAENdjet7quG28=
  
@@ -26,7 +26,7 @@ In the treminal please run the following commands
  
  remove all other DB_* values
  
-In the terminal 
+3.In the terminal 
 
 `php artisan passport:client`
 
@@ -39,13 +39,13 @@ Client ID: 2
 Client secret: aGCZWXswHCVXJgbW4MmIX69GxCHMdOuDvUMxjYLI
 ```
 
-Then run following in the Terminal
+4.Then run following in the Terminal
 
 ` php -S localhost:8000 -t public`
 
 Please use a deferent port if 8000 already in use
 
-Please do the following CURL call. If Postman is used the parameters should go in Body as form-data
+5.Please do the following CURL call. If Postman is used the parameters should go in Body as form-data
 Make sure to replace the {clientID} and {client_secret} with the values created above
 ```php
 $curl = curl_init();
@@ -70,7 +70,7 @@ echo $response;
 
 This will provide you with a long access_token needed to validate the API calls.
 
-Once this is done request can be sent to the endpoint /api/carbon-offset-schedule
+6.Once this is done request can be sent to the endpoint /api/carbon-offset-schedule
 
 ```php
 $curl = curl_init();
