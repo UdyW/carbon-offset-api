@@ -10,7 +10,7 @@ class CarbonOffsetScheduleTest extends TestCase
 
     protected $headers = [];
 
-    //defing test cases
+    //define test cases
     protected $testCases = [
         [
             'input' => ['2021-01-07', '5'],

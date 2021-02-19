@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class ScheduleController extends Controller
 {
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     * @throws \Illuminate\Validation\ValidationException
+     */
     public function carbonOffsetSchedule(Request $request)
     {
         $this->validate($request,[
